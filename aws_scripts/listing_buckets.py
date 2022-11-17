@@ -6,9 +6,4 @@ client = boto3.client(
     aws_secret_access_key='cKKwThvAZ+bfUlwAGziAcjtD9SrRhwg1uBuksKjD',
 
 )
-response = client.list_buckets()
-
-for name in response['Buckets']:
-    print(name['Name'])
-    res = client.get_bucket_location(Bucket=name['Name'])
-    print(res['LocationConstraint'])
+response = client.list_buckets(
