@@ -1,0 +1,19 @@
+Dedicated Hosts:
+
+	dedicated hosts are the physical servers with EC2 instance capacity that are only dedicated for our use
+
+Types of instances:
+	general purpose(eg:t3,mac)
+	compute optimized(eg:c4,c5)
+	memory optimized(eg:r4,r5)
+	storage optimized(eg:i3,i4i,h1)
+	accerlerated computing(eg:p4,p3,g5)
+
+AMI:
+	amazon machine image used to provide information require to lauch the instance.you must create AMI when you create instances
+	single AMI is used for multiple instances
+
+EBS:
+	elastic block store is a block level storage volumes(like harddrives) for use with EC2 instances.it is scalable as per needs.it is persist
+	independently from the running life of the instance and we can create multiple EBS for single instance and both instance and 
+	EBS are in the same availabilty zone
